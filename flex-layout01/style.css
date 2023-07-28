@@ -16,17 +16,44 @@ body {
 .hlavicka {
   background-color: #2ecc71;
 }
+
 .hlavni {
   background-color: #f1c40f;
 }
+
 .levy {
   background-color: #3498db;
 }
+
 .pravy {
   background-color: #e74c3c;
 }
+
 .paticka {
   background-color: #9b59b6;
 }
 
 /* ---------------------------------------------------- */
+
+body {
+  margin: 0;
+}
+
+.kontejner {
+  display: flex;
+}
+
+.levy {
+  order: 1;
+  flex: 25%;
+}
+
+.pravy {
+  order: 3;
+  flex: 20%;
+}
+
+.hlavni {
+  order: 2;
+  flex: 55%;
+}

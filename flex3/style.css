@@ -1,5 +1,9 @@
 /* nejsme vcerejsi, pouzivame moderni box model */
-*, :after, :before { box-sizing: border-box; }
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
 
 .ctverecek {
     font: 30px/1 sans-serif;
@@ -8,10 +12,21 @@
     min-height: 100px;
 }
 
-.prvni { background-color: #2ecc71;}
-.druhy { background-color: #f1c40f;}
-.treti { background-color: #3498db;}
-.ctvrty { background-color: #e74c3c;}
+.prvni {
+    background-color: #2ecc71;
+}
+
+.druhy {
+    background-color: #f1c40f;
+}
+
+.treti {
+    background-color: #3498db;
+}
+
+.ctvrty {
+    background-color: #e74c3c;
+}
 
 .kontejner {
     padding: 10px;
@@ -21,3 +36,24 @@
 
 /* ---------------------------------------------------- */
 /* ZDE NAPIŠ VLASTNÍ CSS */
+
+body {
+    margin: 0;
+}
+
+.kontejner {
+    display: flex;
+}
+
+.prvni {
+    flex-grow: 1;
+}
+
+.druhy,
+.treti {
+    flex: 0 0 100px;
+}
+
+.ctvrty {
+    flex-grow: 2;
+}
